@@ -2,12 +2,12 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.jimhunkinsent.jimhunkins.stevedillner"
-        version   = "1.1.0">
+        version   = "2.0.0">
 		
     <name>Steve Dillner</name>
 
     <description>
-        Steve Dillner's Unlimited Business Card App from App-Platform.net.
+        Steve Dillner's Unlimited Business Card App from App-Platform.net. My name is Steve Dillner with American Mortgage & Equity Consultants, Inc. I have been helping people buy or refinance homes for the past 12 years and I welcome the opportunity to work with you too! I value all of my client's and can't wait to meet you to see how I can best server your mortgage financing needs.
     </description>
 
     <author href="http://app-platform.net" email="info@app-platform.net">
