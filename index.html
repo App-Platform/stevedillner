@@ -30,7 +30,6 @@
                 
 <!-- Add PhoneGap -->
 <script type="text/javascript" src="phonegap.js"></script>
-<script type="text/javascript" src="childbrowser.js"></script>
 
 </head>
 
@@ -60,7 +59,7 @@
     		<p><strong>Get Your Own App</strong><br>
    		    Tap the &quot;Get your own app!&quot; button and enter the email address of the person interested in getting more information about apps from App-Platform.net in the &quot;Email&quot; field. Once you are done tap the &quot;Submit&quot; button and a representative of App-Platform.net will be in touch.</p>
         	<p><strong>Learn more</strong><br>
-            Go to <a target="_blank" onClick="window.plugins.childBrowser.openExternal('http://app-platform.net');">App-Platform.net</a> to learn more about this app and others.</p>
+            Go to <a target="_blank" onClick="window.open('http://app-platform.net', '_system', 'location=yes');">App-Platform.net</a> to learn more about this app and others.></p>
     </div>
         <div data-role="footer" align="center"> <a href="#" data-role="button" data-inline="true" data-theme="a" data-rel="back" data-icon="delete" style="margin-top:10px; margin-bottom:10px;">Close Window</a> </div>
     </div><!-- /help -->
@@ -140,12 +139,12 @@
         <p><strong>Contact</strong></p>
         <a href="tel:7632342612" data-role="button" data-icon="phone">(763) 234-2612</a> 
         <a href="mailto:steve.dillner@amecinc.org" target="_blank" data-icon="email" data-role="button">steve.dillner@amecinc.org</a> 
-        <a data-role="button" data-icon="info" target="_blank" onClick="window.plugins.childBrowser.openExternal('http://www.stevedillnerloans.com/');">www.stevedillnerloans.com</a>
+        <a data-role="button" data-icon="info" target="_blank" onClick="window.open('http://www.stevedillnerloans.com/', '_system', 'location=yes');">www.stevedillnerloans.com</a>
 
         <p><strong>Location:</strong><br />
         570 Dodge Ave NW<br />
         Elk River, MN 55330</p>
-        <a data-role="button" data-icon="home" target="_blank" onClick="window.plugins.childBrowser.openExternal('https://maps.google.com/maps?q=570+Dodge+Ave+NW,+Elk+River,+MN&hl=en&sll=46.44186,-93.36129&sspn=11.978014,27.355957&oq=570+Dodge+Ave+NW,+&t=h&hnear=570+Dodge+Ave+NW,+Elk+River,+Minnesota+55330&z=16&iwloc=A');">Map</a>
+        <a data-role="button" data-icon="home" target="_blank" onClick="window.open('https://maps.google.com/maps?q=570+Dodge+Ave+NW,+Elk+River,+MN&hl=en&sll=46.44186,-93.36129&sspn=11.978014,27.355957&oq=570+Dodge+Ave+NW,+&t=h&hnear=570+Dodge+Ave+NW,+Elk+River,+Minnesota+55330&z=16&iwloc=A', '_system', 'location=yes');">Map</a>
 
         <p><strong>Select Realtor Listings</strong></p>
         <div id="gallery_1"></div>
@@ -209,7 +208,7 @@ $(function() {
         
                 $.ajax({
                 type: "POST",
-                url: "http://joeytork.app-platform.net/php/emailReferral.php",
+                url: "http://stevedillner.app-platform.net/php/emailReferral.php",
                 data: data,
                 success: function(){
                     $(form).fadeOut();
